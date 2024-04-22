@@ -60,6 +60,49 @@ Before you get started, make sure you have the following components:
 
 8. **Monitor Operation**: Monitor the operation of your fish feeder to ensure it is functioning correctly and adjust settings as needed.
 
+```
+        +---------------------+       +----------------------+
+        |      Arduino Uno    |       |       DS1302 RTC     |
+        |                     |       |                      |
+        |  Digital Pin 9 (PWM)|-------| Servo Signal (Orange)|
+        |  5V                 |-------| VCC (Red)            |
+        |  GND                |-------| GND (Black)          |
+        |                     |       | CLK (Yellow)         |
+        |                     |       | DAT (Green)          |
+        |                     |       | RST (Blue)           |
+        +----------+----------+       +------------+---------+
+                   |                               |
+                   |          Servo Motor          |
+                   |                               |
+                   |    +---------------------+    |
+                   +----|  Signal (Orange)    |----+
+                        |  5V (Red)            |
+                        |  GND (Brown)          |
+                        +---------------------+
+
+```
+
+Here's a detailed explanation of the connections:
+
+1. **Arduino Uno**:
+   - Digital Pin 9 (PWM): Connects to the signal wire of the servo motor for controlling its movement.
+   - 5V: Provides power to the servo motor and DS1302 RTC module.
+   - GND: Common ground connection for all components.
+
+2. **DS1302 RTC**:
+   - VCC (Red): Connects to the 5V pin on the Arduino Uno for power.
+   - GND (Black): Connects to the GND pin on the Arduino Uno for ground.
+   - CLK (Yellow): Connects to a digital pin on the Arduino Uno (e.g., pin 2) for clock signal.
+   - DAT (Green): Connects to a digital pin on the Arduino Uno (e.g., pin 3) for data communication.
+   - RST (Blue): Connects to a digital pin on the Arduino Uno (e.g., pin 4) for reset signal.
+
+3. **Servo Motor**:
+   - Signal (Orange): Connects to Digital Pin 9 (PWM) on the Arduino Uno for control signal.
+   - 5V (Red): Connects to the 5V pin on the Arduino Uno for power.
+   - GND (Brown): Connects to the GND pin on the Arduino Uno for ground.
+
+Ensure that you have adequate power for the servo motor, especially if it's a high-torque model. Double-check the connections and verify the pin assignments before powering on the system to avoid damaging any components. Once everything is connected properly, you can upload the code and test your Arduino Fish Feeder project.
+
 ## Usage
 
 - **Monitor Operation**: Use the serial monitor in the Arduino IDE to view the current time and debug any issues with your fish feeder.
