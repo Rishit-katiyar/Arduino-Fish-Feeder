@@ -42,7 +42,7 @@ Before you get started, make sure you have the following components:
 3. **Download Fish Feeder Code**: Clone or download the Arduino Fish Feeder repository to your local machine.
 
     ```bash
-    git clone https://github.com/yourusername/Arduino-Fish-Feeder.git
+    git clone https://github.com/Rishit-katiyar/Arduino-Fish-Feeder.git
     ```
 
 4. **Open Arduino Sketch**: Open the Arduino sketch file (`fish_feeder.ino`) in the Arduino IDE.
