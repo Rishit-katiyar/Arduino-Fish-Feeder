@@ -76,8 +76,8 @@ Before you get started, make sure you have the following components:
                    |                               |
                    |    +---------------------+    |
                    +----|  Signal (Orange)    |----+
-                        |  5V (Red)            |
-                        |  GND (Brown)          |
+                        |  5V (Red)           |
+                        |  GND (Brown)        |
                         +---------------------+
 
 ```
